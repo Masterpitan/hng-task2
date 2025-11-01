@@ -12,7 +12,7 @@ This project implements a blue/green deployment setup with Nginx load balancing,
   - System startup notifications
 - **Configurable Thresholds**: Environment-based configuration for error rates, window sizes, and cooldowns
 
-## Quick Start
+## Setting up and starting
 
 1. **Clone and Setup**:
    ```bash
@@ -22,7 +22,7 @@ This project implements a blue/green deployment setup with Nginx load balancing,
    ```
 
 2. **Configure Slack Webhook**:
-   Edit `.env` and set your `SLACK_WEBHOOK_URL`
+   Edit `.env` and after configuring your slack, set your `SLACK_WEBHOOK_URL`
 
 3. **Start Services**:
    ```bash
@@ -126,7 +126,7 @@ All settings are configured via environment variables in `.env`:
 
 ## Troubleshooting
 
-1. **No Slack alerts**: Check `SLACK_WEBHOOK_URL` in `.env`
+1. **No Slack alerts?**: Check `SLACK_WEBHOOK_URL` in `.env`
 2. **Logs not appearing**: Ensure shared volume is mounted correctly
 3. **Failover not working**: Check container health and nginx upstream configuration
 
@@ -142,12 +142,6 @@ All settings are configured via environment variables in `.env`:
 ├── test_chaos.py              # Chaos testing script
 └── README.md                  # This file
 ```
-
-## Screenshots Required for Submission
-
-1. **Slack Alert - Failover Event**: Screenshot showing failover detection message
-2. **Slack Alert - High Error Rate**: Screenshot showing error rate threshold breach
-3. **Container Logs**: Screenshot of nginx logs showing structured log fields (pool, release, upstream status)
 
 ## Verification Steps
 

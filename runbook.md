@@ -58,7 +58,7 @@ docker compose restart nginx
 # Nginx access logs
 docker compose logs -f nginx
 
-# Alert watcher logs  
+# Alert watcher logs
 docker compose logs -f alert_watcher
 
 # Application logs

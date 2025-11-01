@@ -9,11 +9,7 @@ The core aim of this project is to implement an Nginx reverse proxy with blue-gr
 - Added `fail_timeout` and `max_fails` for better fault tolerance.
 - Used a backup server configuration for green deployment to minimize downtime during switches.
 
-Here’s a short, clear explanation of your **thought process** you can add under a new section in your `DECISION.md`:
 
----
-
-### 🧩 Thought Process
 
 ## Brief Thought Process
 My approach was to design a lightweight and fault-tolerant reverse proxy setup for blue-green deployment. I began by:
